@@ -17,6 +17,10 @@ function Navbar() {
         <Link className="mx-4 hover:font-bold" href="/categories/pants">
           Pants
         </Link>
+
+        <Link className="mx-4 hover:font-bold" href="/categories/polos">
+          Polos
+        </Link>
         <Link className="mx-4 hover:font-bold" href="/categories/accessories">
           Accessories
         </Link>

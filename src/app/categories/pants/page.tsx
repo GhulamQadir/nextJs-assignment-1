@@ -10,12 +10,9 @@ function PantsPage() {
           {pantsCateg.map((prod, index) => {
             const { title, img, price } = prod;
             return (
-              <ProductCard
-                index={index}
-                img={img}
-                title={title}
-                price={price}
-              />
+              <div key={index}>
+                <ProductCard img={img} title={title} price={price} />
+              </div>
             );
           })}
         </div>

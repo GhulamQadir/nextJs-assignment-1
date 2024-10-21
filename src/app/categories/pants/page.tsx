@@ -1,3 +1,4 @@
+import ProductCard from "@/components/ProductCard";
 import { pantsCateg } from "@/utils/data";
 
 function PantsPage() {
@@ -9,13 +10,12 @@ function PantsPage() {
           {pantsCateg.map((prod, index) => {
             const { title, img, price } = prod;
             return (
-              <div key={index} className="my-3 shadow-xl">
-                <img src={img} className="h-96 w-80 object-cover" />
-                <div className="p-2">
-                  <p className="text-ms text-gray-700 font-medium">{title}</p>
-                  <p className=" text-md font-bold">Rs.{price}</p>
-                </div>
-              </div>
+              <ProductCard
+                index={index}
+                img={img}
+                title={title}
+                price={price}
+              />
             );
           })}
         </div>
